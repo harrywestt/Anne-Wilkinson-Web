@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Anne-Wilkinson-Web:build:production"
+              "buildTarget": "Anne-Wilkinson-Web:build:production"
             },
             "development": {
-              "browserTarget": "Anne-Wilkinson-Web:build:development"
+              "buildTarget": "Anne-Wilkinson-Web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Anne-Wilkinson-Web:build"
+            "buildTarget": "Anne-Wilkinson-Web:build"
           }
         },
         "test": {
