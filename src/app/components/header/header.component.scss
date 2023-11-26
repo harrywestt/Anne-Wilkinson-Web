@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 50px;
+  border-bottom: 2px solid #dfe7ef;
+  padding: 8px;
+  padding-top: 30px;
+  padding-bottom: 27px;
+
+  .centered-image {
+    cursor: pointer;
+    margin: 40px;
+
+    .autoscale-image {
+      max-width: 100%;
+      min-width: 164.75px;
+      height: 50px;
+    }
+  }
+
+  .sticky-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+    input {
+      height: 44.5px;
+    }
+  }
+}

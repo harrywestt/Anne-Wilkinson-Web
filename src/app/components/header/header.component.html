@@ -1,0 +1,14 @@
+<div class="container">
+  <p-tabMenu class="tabs" [model]="items"></p-tabMenu>
+  <div (click)="handleLogoClick()" class="centered-image">
+    <img
+      src="assets/images/AW_Logo.png"
+      alt="Anne Wilkinson"
+      class="autoscale-image"
+    />
+  </div>
+  <div class="p-inputgroup sticky-right">
+    <input type="text" pInputText placeholder="Search" />
+    <button type="button" pButton icon="pi pi-search"></button>
+  </div>
+</div>
