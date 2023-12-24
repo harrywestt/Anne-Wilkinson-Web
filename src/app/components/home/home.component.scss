@@ -1,4 +1,15 @@
-.autoscale-image {
-  height: 100%;
+.scroll-container {
+  overflow-y: auto; /* Allow scrolling */
+  overflow-x: hidden;
+}
+
+.image-container {
   width: 100%;
+  height: calc(100vh - 65px);
+}
+
+img {
+  width: 100%;
+  height: calc(100vh - 65px - 1rem);
+  display: block;
 }

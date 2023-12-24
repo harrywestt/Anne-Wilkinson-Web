@@ -1,32 +1,39 @@
-<div class="container">
-  <div (click)="handleLogoClick()" class="logo">
-    <img
-      src="assets/images/AW_Logo.png"
-      alt="Anne Wilkinson"
-      class="autoscale-image"
-    />
-  </div>
-  <div class="tabs">
-    <ng-container
-      *ngFor="let item of items; let last = last; let first = first"
-    >
-      <div
-        class="tab"
-        [class.selected]="selectedItem === item"
-        (click)="selectTab(item)"
+<div class="sticky-container">
+  <div class="container">
+    <div (click)="handleLogoClick()" class="logo">
+      <img
+        src="assets/images/AW_Logo.png"
+        alt="Anne Wilkinson"
+        class="autoscale-image"
+      />
+    </div>
+    <div class="tabs">
+      <ng-container
+        *ngFor="let item of items; let last = last; let first = first"
       >
-        {{ item.label }}
-      </div>
-      <div *ngIf="!last" class="separator">/</div>
-    </ng-container>
+        <div
+          class="tab"
+          [class.selected]="selectedItem === item"
+          (click)="selectTab(item)"
+        >
+          {{ item.label }}
+        </div>
+        <div *ngIf="!last" class="separator">/</div>
+      </ng-container>
+    </div>
+    <div class="buttons">
+      <p-button
+        icon="pi pi-search"
+        [rounded]="true"
+        [outlined]="true"
+      ></p-button>
+      <p-button
+        icon="pi pi-shopping-cart"
+        [rounded]="true"
+        [outlined]="true"
+      ></p-button>
+      <p-button icon="pi pi-user" [rounded]="true" [outlined]="true"></p-button>
+    </div>
   </div>
-  <div class="buttons">
-    <p-button icon="pi pi-search" [rounded]="true" [outlined]="true"></p-button>
-    <p-button
-      icon="pi pi-shopping-cart"
-      [rounded]="true"
-      [outlined]="true"
-    ></p-button>
-    <p-button icon="pi pi-user" [rounded]="true" [outlined]="true"></p-button>
-  </div>
+  <div class="bottom-shadow"></div>
 </div>
